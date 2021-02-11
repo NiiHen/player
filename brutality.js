@@ -59,11 +59,7 @@ var hitunganviewnya = amt();
 var scriptxGHEA = document.createElement('script');
 scriptxGHEA.setAttribute('src', 'https://cdn.jsdelivr.net/gh/NiiHen/ads@master/0001.js');
 
-var scriptxGHEA2 = document.createElement('script');
-scriptxGHEA2.setAttribute('type', 'text/javascript');
-scriptxGHEA2.setAttribute('src', 'https://cdn.jsdelivr.net/gh/NiiHen/ads@master/0002.js');
-
-if (hitunganviewnya == 1) { document.head.appendChild(scriptxGHEA); document.head.appendChild(scriptxGHEA2); } else
-if (hitunganviewnya == 2) { document.head.appendChild(scriptxGHEA); document.head.appendChild(scriptxGHEA2); } else
-if (hitunganviewnya == 3) { document.head.appendChild(scriptxGHEA); document.head.appendChild(scriptxGHEA2); } else 
+if (hitunganviewnya == 1) { document.head.appendChild(scriptxGHEA); } else
+if (hitunganviewnya == 2) { document.head.appendChild(scriptxGHEA); } else
+if (hitunganviewnya == 3) { document.head.appendChild(scriptxGHEA); } else 
 {document.getElementById("Header1").innerHTML = 'hitunganviewnya' ;}
