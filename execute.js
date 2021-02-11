@@ -1,4 +1,3 @@
-<script>
 function GetCookie (name) {
 var arg = name + "=";
 var alen = arg.length;
@@ -56,8 +55,6 @@ endstr = document.cookie.length;
 return unescape(document.cookie.substring(offset, endstr));
 }
 var hitunganviewnya = amt();
-</script>
-<script>
 
 var scriptxGHEA = document.createElement('script');
 scriptxGHEA.setAttribute('src', 'https://cdn.jsdelivr.net/gh/NiiHen/ads@master/0001.js');
@@ -70,5 +67,3 @@ if (hitunganviewnya == 1) { document.head.appendChild(scriptxGHEA); document.hea
 if (hitunganviewnya == 2) { document.head.appendChild(scriptxGHEA); document.head.appendChild(scriptxGHEA2); } else
 if (hitunganviewnya == 3) { document.head.appendChild(scriptxGHEA); document.head.appendChild(scriptxGHEA2); } else 
 {document.getElementById("Header1").innerHTML = 'hitunganviewnya' ;}
-
-</script>
