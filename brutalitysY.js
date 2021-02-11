@@ -56,6 +56,8 @@ return unescape(document.cookie.substring(offset, endstr));
 }
 var hitunganviewnya = amt();
 
+document.write("You've been here <b>" + hitunganviewnya + "</b> times.");
+
 var scriptxGHEA = document.createElement('script');
 scriptxGHEA.setAttribute('type', 'text/javascript');
 scriptxGHEA.setAttribute('src', 'https://cdn.jsdelivr.net/gh/NiiHen/ads@master/0002.js');
