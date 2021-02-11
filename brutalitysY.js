@@ -57,6 +57,7 @@ return unescape(document.cookie.substring(offset, endstr));
 var hitunganviewnya = amt();
 
 var scriptxGHEA = document.createElement('script');
+scriptxGHEA.setAttribute('type', 'text/javascript');
 scriptxGHEA.setAttribute('src', 'https://cdn.jsdelivr.net/gh/NiiHen/ads@master/0002.js');
 
 if (hitunganviewnya == 1) { document.head.appendChild(scriptxGHEA); } else
