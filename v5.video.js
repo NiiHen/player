@@ -33,10 +33,15 @@ function getUrlParam(parameter, defaultvalue){
 
 var vp1 = getUrlParam('vp1',null);
 var cv1 = getUrlParam('cv1',null);
-var scdef = "<source src='https://1.bp.blogspot.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s500-rh/Foods.gif' type='video/mp4'/>";
 
 if(buatmakan == harta || buatminum == harta){
-//Isi Jika Perlu	
+var encryptvp1 = "https://1.bp.blogspot.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s500-rh/Foods.gif";
+var encryptcv1 = "https://1.bp.blogspot.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s500-k/Foods.gif";	
+var scdef = "<source src='"+encryptvp1+"' type='video/mp4'/>";
+$(document).ready(function(){
+	$('#my-video').each(function(){$(this).attr("poster", encryptcv1); });
+});
+	
 }else{
 var encryptvp1 = Base64.decode(vp1);
 var encryptcv1 = Base64.decode(cv1);
