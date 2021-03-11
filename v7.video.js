@@ -33,7 +33,7 @@ function getUrlParam(parameter, defaultvalue){
 var vp1 = getUrlParam('vp1',null);
 var cv1 = getUrlParam('cv1',null);
 
-if(buatmakan == harta){
+if(vp1 == null){
 var videoplayer1 = "https://1.bp.blogspot.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s500-rh/Foods.gif";
 var covervideo1 = "https://1.bp.blogspot.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s500-k/Foods.gif";	
 var scdef = "<source src='"+videoplayer1+"' type='video/mp4'/>";
@@ -42,7 +42,8 @@ $(document).ready(function(){
 });
 	
 }else{
-var encryptvp1 = Base64.decode(vp1);
+var vp1x = vp1.replace('%%%$$$%%%','');	
+var encryptvp1 = Base64.decode(vp1x);
 var encryptcv1 = Base64.decode(cv1);
 var scawal = "<source src='"+encryptvp1+"' type='video/mp4'/>";
 $(document).ready(function(){
