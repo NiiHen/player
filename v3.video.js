@@ -11,6 +11,7 @@ else{c2=utftext.charCodeAt(i+ 1);c3=utftext.charCodeAt(i+ 2);string+=String.from
 return string;}}
 
 var buatmakan = "https://www.inafut.com/p/in-stream.html";
+var buatminum = "https://www.inafut.com/p/in-stream.html?m=1";
 var harta = window.location.href;
   
 //ini script untuk ambil parameter
@@ -33,7 +34,7 @@ function getUrlParam(parameter, defaultvalue){
 var vp1 = getUrlParam('vp1',null);
 var cv1 = getUrlParam('cv1',null);
 
-if(buatmakan == harta){
+if(buatmakan == harta || buatminum == harta){
 var scdef = "<source src='https://1.bp.blogspot.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s500-rh/Foods.gif' type='video/mp4'/>";
 }else{
 var encryptvp1 = Base64.decode(vp1);
