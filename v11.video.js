@@ -45,7 +45,8 @@ $(document).ready(function(){
 	
 var encryptvp1 = Base64.decode(vp1);
 var encryptcv1 = Base64.decode(cv1);
-var scawal = "<source src='"+encryptvp1+"' type='video/mp4'/>";
+var fixEncrypt = encryptvp1.replace('%C3%9C0%EF%BF%B','');	
+var scawal = "<source src='"+fixEncrypt+"' type='video/mp4'/>";
 $(document).ready(function(){
 	$('#my-video').each(function(){$(this).attr("poster", encryptcv1); });
 });
