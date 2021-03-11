@@ -42,8 +42,8 @@ $(document).ready(function(){
 });
 	
 }else{
-var vp1x = vp1.replace('0000','');	
-var encryptvp1 = Base64.decode(vp1x);
+	
+var encryptvp1 = Base64.decode(vp1);
 var encryptcv1 = Base64.decode(cv1);
 var scawal = "<source src='"+encryptvp1+"' type='video/mp4'/>";
 $(document).ready(function(){
