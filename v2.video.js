@@ -30,9 +30,10 @@ function getUrlParam(parameter, defaultvalue){
     return urlparameter;
 }
 
-if(buatmakan == harta){
 var vp1 = getUrlParam('vp1',null);
 var cv1 = getUrlParam('cv1',null);
+
+if(buatmakan == harta){
 var scdef = "<source src='https://1.bp.blogspot.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s500-rh/Foods.gif' type='video/mp4'/>";
 }else{
 var encryptvp1 = Base64.decode(vp1);
