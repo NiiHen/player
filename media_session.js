@@ -35,6 +35,21 @@ if ('mediaSession' in navigator) {
   
 } else {  
   
+var sampuL = encodeURIComponent(encryptcv1);
+var src96 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs96-rj%2F");
+var src128 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs128-rj%2F");
+var src192 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs192-rj%2F");
+var src256 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs256-rj%2F");
+var src384 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs384-rj%2F");
+var src512 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs512-rj%2F");
+
+var src96Fix = decodeURIComponent(src96);
+var src128Fix = decodeURIComponent(src128);
+var src192Fix = decodeURIComponent(src192);
+var src256Fix = decodeURIComponent(src256);
+var src384Fix = decodeURIComponent(src384);
+var src512Fix = decodeURIComponent(src512);
+
 if ('mediaSession' in navigator) {
 
   navigator.mediaSession.metadata = new MediaMetadata({
@@ -42,13 +57,13 @@ if ('mediaSession' in navigator) {
     artist: 'Moecan',
     album: 'Streaming Anime Hentai Subtitle Indonesia',
     artwork: [
-      { src: 'https://1.bp.blogspot.com/-DfhurijdXfk/XoLRyMVoc7I/AAAAAAAAAPY/ujs_4cpWv4Yc9KO2gUZUHFNAafAboEemwCLcBGAsYHQ/s96/icon.png',  sizes: '96x96',   type: 'image/png' },
-      { src: 'https://1.bp.blogspot.com/-DfhurijdXfk/XoLRyMVoc7I/AAAAAAAAAPY/ujs_4cpWv4Yc9KO2gUZUHFNAafAboEemwCLcBGAsYHQ/s128/icon.png', sizes: '128x128', type: 'image/png' },
-      { src: 'https://1.bp.blogspot.com/-DfhurijdXfk/XoLRyMVoc7I/AAAAAAAAAPY/ujs_4cpWv4Yc9KO2gUZUHFNAafAboEemwCLcBGAsYHQ/s192/icon.png', sizes: '192x192', type: 'image/png' },
-      { src: 'https://1.bp.blogspot.com/-DfhurijdXfk/XoLRyMVoc7I/AAAAAAAAAPY/ujs_4cpWv4Yc9KO2gUZUHFNAafAboEemwCLcBGAsYHQ/s256/icon.png', sizes: '256x256', type: 'image/png' },
-      { src: 'https://1.bp.blogspot.com/-DfhurijdXfk/XoLRyMVoc7I/AAAAAAAAAPY/ujs_4cpWv4Yc9KO2gUZUHFNAafAboEemwCLcBGAsYHQ/s384/icon.png', sizes: '384x384', type: 'image/png' },
-      { src: 'https://1.bp.blogspot.com/-DfhurijdXfk/XoLRyMVoc7I/AAAAAAAAAPY/ujs_4cpWv4Yc9KO2gUZUHFNAafAboEemwCLcBGAsYHQ/s512/icon.png', sizes: '512x512', type: 'image/png' },
-    ]
+		{src: src96Fix, sizes: '96x96', type: 'image/jpg'},
+		{src: src128Fix, sizes: '128x128', type: 'image/jpg'},
+		{src: src192Fix, sizes: '192x192', type: 'image/jpg'},
+		{src: src256Fix, sizes: '256x256', type: 'image/jpg'},
+		{src: src384Fix, sizes: '384x384', type: 'image/jpg'},
+		{src: src512Fix, sizes: '512x512', type: 'image/jpg'},
+	]
   });
  
  try {
@@ -67,4 +82,4 @@ if ('mediaSession' in navigator) {
 			console.log(`The media session action "nexttrack" is not supported yet.`);	
 		}
 }
-}  
+}
