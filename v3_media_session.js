@@ -36,12 +36,12 @@ if ('mediaSession' in navigator) {
 } else {  
   
 var sampuL = encodeURIComponent(encryptcv1);
-var src96 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs96-rj%2F");
-var src128 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs128-rj%2F");
-var src192 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs192-rj%2F");
-var src256 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs256-rj%2F");
-var src384 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs384-rj%2F");
-var src512 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs512-rj%2F");
+var src96 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs96-c-rj%2F");
+var src128 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs128-c-rj%2F");
+var src192 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs192-c-rj%2F");
+var src256 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs256-c-rj%2F");
+var src384 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs384-c-rj%2F");
+var src512 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs512-c-rj%2F");
 
 var src96Fix = decodeURIComponent(src96);
 var src128Fix = decodeURIComponent(src128);
