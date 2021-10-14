@@ -7,12 +7,12 @@ if ('mediaSession' in navigator) {
     artist: 'INAFUT.COM ~ Indonesian Foods',
     album: 'Streaming '+defaultjudul,
     artwork: [
-      { src: 'https://1.bp.blogspot.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s96-k/Foods.gif',  sizes: '96x96',   type: 'image/gif' },
-      { src: 'https://1.bp.blogspot.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s128-k/Foods.gif', sizes: '128x128', type: 'image/gif' },
-      { src: 'https://1.bp.blogspot.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s192-k/Foods.gif', sizes: '192x192', type: 'image/gif' },
-      { src: 'https://1.bp.blogspot.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s256-k/Foods.gif', sizes: '256x256', type: 'image/gif' },
-      { src: 'https://1.bp.blogspot.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s384-k/Foods.gif', sizes: '384x384', type: 'image/gif' },
-      { src: 'https://1.bp.blogspot.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s512-k/Foods.gif', sizes: '512x512', type: 'image/gif' },
+      { src: 'https://lh3.googleusercontent.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s96-k/Foods.gif',  sizes: '96x96',   type: 'image/gif' },
+      { src: 'https://lh3.googleusercontent.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s128-k/Foods.gif', sizes: '128x128', type: 'image/gif' },
+      { src: 'https://lh3.googleusercontent.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s192-k/Foods.gif', sizes: '192x192', type: 'image/gif' },
+      { src: 'https://lh3.googleusercontent.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s256-k/Foods.gif', sizes: '256x256', type: 'image/gif' },
+      { src: 'https://lh3.googleusercontent.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s384-k/Foods.gif', sizes: '384x384', type: 'image/gif' },
+      { src: 'https://lh3.googleusercontent.com/-HlsivgqrRtw/YEmxHKh1XFI/AAAAAAAAASQ/MUkr1bnKbMM18Y9QPQqorB4SIeRUCsv8gCLcBGAsYHQ/s512-k/Foods.gif', sizes: '512x512', type: 'image/gif' },
     ]
   });
  
@@ -43,12 +43,12 @@ var src256 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs256-c-rj%2F");
 var src384 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs384-c-rj%2F");
 var src512 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs512-c-rj%2F");
   
-var src96v2 = src96.replace(/=s+[0-9]/, "=s96-c-rj");
-var src128v2 = src128.replace(/=s+[0-9]/, "=s128-c-rj");
-var src192v2 = src192.replace(/=s+[0-9]/, "=s192-c-rj");
-var src256v2 = src256.replace(/=s+[0-9]/, "=s256-c-rj");
-var src384v2 = src384.replace(/=s+[0-9]/, "=s384-c-rj");
-var src512v2 = src512.replace(/=s+[0-9]/, "=s512-c-rj");
+var src96v2 = src96.replace(/%3Ds+[0-9]/, "%3Ds96-c-rj");
+var src128v2 = src128.replace(/%3Ds+[0-9]/, "%3Ds128-c-rj");
+var src192v2 = src192.replace(/%3Ds+[0-9]/, "%3Ds192-c-rj");
+var src256v2 = src256.replace(/%3Ds+[0-9]/, "%3Ds256-c-rj");
+var src384v2 = src384.replace(/%3Ds+[0-9]/, "%3Ds384-c-rj");
+var src512v2 = src512.replace(/%3Ds+[0-9]/, "%3Ds512-c-rj");
 
 var src96Fix = decodeURIComponent(src96v2);
 var src128Fix = decodeURIComponent(src128v2);
