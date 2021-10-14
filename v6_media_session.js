@@ -43,12 +43,12 @@ var src256 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs256-c-rj%2F");
 var src384 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs384-c-rj%2F");
 var src512 = sampuL.replace(/\%2Fs.+%2F/, "%2Fs512-c-rj%2F");
   
-var src96v2 = src96.replace(/%3Ds+[0-9]/, "%3Ds96-c-rj");
-var src128v2 = src128.replace(/%3Ds+[0-9]/, "%3Ds128-c-rj");
-var src192v2 = src192.replace(/%3Ds+[0-9]/, "%3Ds192-c-rj");
-var src256v2 = src256.replace(/%3Ds+[0-9]/, "%3Ds256-c-rj");
-var src384v2 = src384.replace(/%3Ds+[0-9]/, "%3Ds384-c-rj");
-var src512v2 = src512.replace(/%3Ds+[0-9]/, "%3Ds512-c-rj");
+var src96v2 = src96.replace(/\%3Ds.+[0-9]/, "%3Ds96-c-rj");
+var src128v2 = src128.replace(/\%3Ds.+[0-9]/, "%3Ds128-c-rj");
+var src192v2 = src192.replace(/\%3Ds.+[0-9]/, "%3Ds192-c-rj");
+var src256v2 = src256.replace(/\%3Ds.+[0-9]/, "%3Ds256-c-rj");
+var src384v2 = src384.replace(/\%3Ds.+[0-9]/, "%3Ds384-c-rj");
+var src512v2 = src512.replace(/\%3Ds.+[0-9]/, "%3Ds512-c-rj");
 
 var src96Fix = decodeURIComponent(src96v2);
 var src128Fix = decodeURIComponent(src128v2);
