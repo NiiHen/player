@@ -12,7 +12,7 @@ $(document).ready(function(){
 		$(this).attr("style", "display:none;"); 
     $('#ListServer0').html( ' <button id="ServDef">Server Default</button> ' );    			
 		    $("#ServDef").click(function(){	
-		      $('#streamingframe').attr("src", "https://www.inafut.com/p/in-stream.html?jd1="+defaultJudul+"&vp1="+Perawanin+"&cv1="+defaultCoverURL);
+		      $('#streamingframe').attr("src", "https://www.movieluck.ml/p/in-stream.html?jd1="+defaultJudul+"&vp1="+Perawanin+"&cv1="+defaultCoverURL);
 		    });
 	  });
       
@@ -25,7 +25,7 @@ $(document).ready(function(){
 		$(this).attr("style", "display:none;"); 
     $('#ListServer1').html( ' <button id="ServAlt">Server Alternatif</button> ' );    			
 		    $("#ServAlt").click(function(){	
-		      $('#streamingframe').attr("src", "https://www.inafut.com/p/in-stream.html?jd1="+defaultJudul+"&vp1="+Perawanin2+"&cv1="+defaultCoverURL);
+		      $('#streamingframe').attr("src", "https://www.movieluck.ml/p/in-stream.html?jd1="+defaultJudul+"&vp1="+Perawanin2+"&cv1="+defaultCoverURL);
 		    });
 	  });
 
@@ -38,7 +38,7 @@ $(document).ready(function(){
 		$(this).attr("style", "display:none;"); 
     $('#ListServer2').html( ' <button id="ServAmn">Server Aman</button> ' );    			
 			$("#ServAmn").click(function(){	
-		    $('#streamingframe').attr("src", "https://www.inafut.com/p/in-stream.html?jd1="+defaultJudul+"&vp1="+Perawanin3+"&cv1="+defaultCoverURL);
+		    $('#streamingframe').attr("src", "https://www.movieluck.ml/p/in-stream.html?jd1="+defaultJudul+"&vp1="+Perawanin3+"&cv1="+defaultCoverURL);
 		  });
 	  });
 });     
