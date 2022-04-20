@@ -10,6 +10,7 @@ $(document).ready(function(){
 		$(this).attr("id", "crot"); 
 		$(this).attr("href", "#"); 	
 		$(this).attr("style", "display:none;"); 
+	    	$('#streaming-container').attr("style", "display:block !important");
     $('#ListServer0').html( ' <button id="ServDef">Server Default</button> ' );    			
 		    $("#ServDef").click(function(){	
 		      $('#streamingframe').attr("src", "https://www.movieluck.ml/p/in-stream.html?jd1="+defaultJudul+"&vp1="+Perawanin+"&cv1="+defaultCoverURL);
